@@ -10,7 +10,14 @@ import pandas as pd
 data = pd.read.csv(.../DeadCollectedBirds_Dataset.csv)
 
 # Add a variable for each useful column in the dataset
-trial = data['t']
-force_plate_rsi = data['force_plate_rsi']
-accelerometer_rsi = data['accelerometer_rsi']
-percent_error = data['percent_error']
+#I'm not sure if the data[] function is the best to use here since a lot of these are names or times
+# also idk if the column names are the right format. the other assignment that i did this for had no spaces in the column name
+Date = data['Date Collected']
+Extrapolation_Area = data['Extrapolation Area']
+Region_Name = data['Region Name']
+State = data['State']
+Species = data['Species']
+Bird_Group = data['Bird Group']
+Position = data['Position']
+Scavenging = data['Scavenging']
+Time Collected = data['Time Collected']
