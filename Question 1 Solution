@@ -8,3 +8,4 @@ import pandas as pd
 #to the end of the collection period.
 
 #first need to convert data in DeadCollectedBirds_Dataset.csv file to numerical data (use panda)
+data = pd.read.csv(.../DeadCollectedBirds_Dataset.csv)
