@@ -8,3 +8,9 @@ import pandas as pd
 
 # First need to convert data in DeadCollectedBirds_Dataset.csv file to numerical data (use panda)
 data = pd.read.csv(.../DeadCollectedBirds_Dataset.csv)
+
+# Add a variable for each useful column in the dataset
+trial = data['t']
+force_plate_rsi = data['force_plate_rsi']
+accelerometer_rsi = data['accelerometer_rsi']
+percent_error = data['percent_error']
