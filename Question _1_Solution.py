@@ -23,7 +23,6 @@ Scavenging = data['Scavenging']
 Time Collected = data['Time Collected']
 
 
-
 #====this is how I did question 1, let me know if looks good same for question 2====#
 
 import pandas as pd 
