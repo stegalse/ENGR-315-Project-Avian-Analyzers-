@@ -25,10 +25,7 @@ This question could likely be answered by counting the number of each species wi
 Sub-Task 3 + 4: Implementation Details
 
 Question 1: How did the number of land birds vs. pelagic birds collected change over time?
-Metrics to be calculated from the data: 
-The number of land birds and pelagic birds over time, that data will help analysis because it will allow us to see how the collected birds changed over the time period they started collecting them. Would need to make a list for each tuple (or bird) for each bird group (should make two lists for each bird group). Then create an if/else statement to count the number of land and pelagic birds collected on each date throughout the dataset. Then a two sample t-test could be used to compare the average number of birds collected throughout the collection period. 
-No additional python packages would be useful for analysis. 
-A plot comparing the number of land vs pelagic birds over time will be useful. It would visually show how the number of each bird group collected changes over time. 
+The number of land birds and pelagic birds over time, that data will help analysis because it will allow us to see how the collected birds changed over the time period they started collecting them. Found by using Panda functions to sort the .csv file by column name and creating separate columns for each bird group and counting the number of birds collected each day. Then a two-sample t-test was used to compare the average number of birds collected throughout the collection period. For the t-test, the null hypothesis states that there is no significant difference in the amount of land vs. pelagic birds collected each month. The alternative hypothesis is that there is a significant difference in the number of each bird type collected each month. If the p value for either test is lower than 0.05, then the null hypothesis is rejected and the alternative hypothesis is accepted. Python packages scipy, numpy, and matplotlib were imported for analysis. A plot comparing the number of land vs pelagic birds over time was created to visually show how the number of each bird group collected changes over time. 
 
 
 Question 2: What area were the rail birds and raptor birds scavenged the most? 
@@ -48,6 +45,10 @@ A bar graph showing the species collected the most within each bird group could 
 
 Sub-Task 6: Results 
 
+Question 1: How did the number of land birds vs. pelagic birds collected change over time?
+Land Birds: t = 0.8353, p = 0.4454
+Pelagic Birds: t = 1.8611, p = 0.1495
+Since both p values are higher than 0.05, the null hypothesis is rejected. There is no evidence that there is a meaningful statistical difference in the amount of land and pelagic birds collected per month. The t values have a difference of 1.0258 mostly due to the 2-3 months where pelagic birds were collected more, as seen in the plot. 
 
 
 Sub-Task 7: Conclusions 
