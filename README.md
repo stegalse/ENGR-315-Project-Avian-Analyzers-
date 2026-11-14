@@ -50,6 +50,23 @@ Land Birds: t = 0.8353, p = 0.4454
 Pelagic Birds: t = 1.8611, p = 0.1495
 Since both p values are higher than 0.05, the null hypothesis is rejected. There is no evidence that there is a meaningful statistical difference in the amount of land and pelagic birds collected per month. The t values have a difference of 1.0258 mostly due to the 2-3 months where pelagic birds were collected more, as seen in the plot. 
 
+Question 2: What area were the rail and raptor birds scavenged the most? 
+Method/Metrics: Using `pandas`, records were filtered for `rail` and `raptor` classifications within `BirdGroup` and grouped by `Extrapolation Area` to evaulate scavenging counts across geographic zones. A one-sided independent t-test was conducted to compare area-level scavenging counts between rail and raptor birds.
+Results: Pasted from Python directly.
+Rail Birds- Scavenging by Extrapolation Area:
+Extrapolation Area
+Barataria Bay ME                     6
+BaratariaBay_3                       1
+Bastian Bay                          1
+Bay Batiste                         17
+Raptor Birds- Scavenging by Extrapolation Area:
+Extrapolation Area
+Mississippi-Alabama Coast           3
+Mississippi-Alabama Gulf Islands    1
+Mobile Bay Interior                 3
+Mobile Bay Seashore                 3
+One-Sided T-Test(Rail vs Raptor Area Scavenging) -> t-stat: 0.7111, p-value: 0.2408
+Conclusion: Rail birds experienced the highest scavenging totals in the North Texas-West Louisiana area, whereas raptor birds peaked in Pensacola.
 
 Sub-Task 7: Conclusions 
 Actions to be completed (after this phase): 
