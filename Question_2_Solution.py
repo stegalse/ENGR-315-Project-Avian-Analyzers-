@@ -34,4 +34,4 @@ def analyze_question_2(filepath):
 
 if __name__ == "__main__":
     #replace with your own csv file 
-    analyze_question_2(....../.... .csv)
+    analyze_question_2('DeadCollectedBirds_Dataset.csv')
