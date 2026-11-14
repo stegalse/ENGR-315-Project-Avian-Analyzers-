@@ -33,5 +33,5 @@ def analyze_question_2(filepath):
         print(f"One-Sided T-Test(Rail vs Raptor Area Scavenging) -> t-stat: {t_stat:.4f}, p-value: {p_value:.4f}")
 
 if __name__ == "__main__":
-    #replace with your own csv file 
+    #run the function 
     analyze_question_2('DeadCollectedBirds_Dataset.csv')
